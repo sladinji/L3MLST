@@ -61,6 +61,14 @@ create_environment:
 	@echo ">>> New virtualenv created. Activate with:\npipenv shell"
 	@echo "\n>>> Exit virtualenv by pressing Ctrl+D"
 
+## Install library
+install_lib:
+	pipenv install
+
+start_jupyterlab:
+	pipenv shell
+	jupyterlab
+
 ## Test python environment is setup correctly
 test_environment:
 	$(PYTHON_INTERPRETER) test_environment.py
