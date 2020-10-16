@@ -66,8 +66,7 @@ install_lib:
 	pipenv install
 
 start_jupyterlab:
-	pipenv shell
-	jupyterlab
+	pipenv run jupyter-lab
 
 ## Test python environment is setup correctly
 test_environment:
